@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+
+/* Título */
+header h1 {
+    background-color: green;
+    color: brown;
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 20px;
+}
+
+/* Apartado 1 */
+.apartado1 {
+    text-align: right;
+    font-size: 14px;
+}
+
+/* Apartados 2 y 3 junto a la imagen */
+.contenido-inferior {
+    display: flex;
+    gap: 20px;
+}
+
+.contenido-inferior article {
+    width: 30%;
+}
+
+.contenido-inferior p {
+    text-align: justify;
+}
+
+.contenido-inferior img {
+    width: 30%;
+    height: 300px;
+}
+
+/* Tabla */
+table {
+    background-color: #001f5b;
+    color: white;
+    width: 45%;
+    margin-left: 30%;
+    margin-right: 25%;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Efecto al pasar el ratón */
+td:hover, th:hover {
+    background-color: #6495ed;
+    color: red;
+}
+
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Titulo2 Titulo3 Imagen";
+}
+
+.Titulo2 { grid-area: Titulo2; }
+
+.Titulo3 { grid-area: Titulo3; }
+
+.Imagen { grid-area: Imagen; }
+
